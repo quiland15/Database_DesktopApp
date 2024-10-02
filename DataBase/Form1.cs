@@ -32,7 +32,7 @@ namespace DataBase
         {
             try
             {
-                query = string.Format("select * from `tbl-users` where username = '{0}'", username.Text);
+                query = string.Format("select * from tbl_pengguna where username = '{0}'", username.Text);
                 ds.Clear();
                 koneksi.Open();
                 perintah = new MySqlCommand(query, koneksi);
