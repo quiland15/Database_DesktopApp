@@ -46,6 +46,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.CBLevel = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -215,11 +216,22 @@
             this.CBLevel.Size = new System.Drawing.Size(121, 24);
             this.CBLevel.TabIndex = 18;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(418, 178);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Print";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 513);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.CBLevel);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnDelete);
@@ -267,5 +279,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ComboBox CBLevel;
+        private System.Windows.Forms.Button button1;
     }
 }
